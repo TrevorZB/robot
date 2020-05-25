@@ -14,6 +14,7 @@ GAME_Y = ((SCREEN_HEIGHT - GAME_HEIGHT) / 2) + 15  # extra 15px for top bar
 def create_rects(img):
     # image = cv.imread(img)
     # original = image.copy()
+    # [ 20 245 214] [ 40 265 294]
     img = cv.cvtColor(img, cv.COLOR_BGR2HSV)
     lower = np.array([22, 93, 0], dtype="uint8")
     upper = np.array([45, 255, 255], dtype="uint8")
@@ -40,6 +41,7 @@ def find_absolute_center(rect):
     center.append(((rect[1] + rect[1] + rect[3]) // 2) + GAME_Y)
     return center
 
+
 def create_map(img):
     # image = cv.imread(img)
     # original = img.copy()
@@ -54,11 +56,10 @@ def create_map(img):
     # print(upperLimit)
     # print(lowerLimit)
 
-
-
     img = cv.cvtColor(img, cv.COLOR_BGR2HSV)
-    lower = np.array([123, 50, 50], dtype = "uint8")
-    upper = np.array([103, 255, 255], dtype = "uint8")
+    # [116  45 135] [136  65 215]
+    lower = np.array([116, 45, 135], dtype = "uint8")
+    upper = np.array([136, 65, 215], dtype = "uint8")
     mask = cv.inRange(img, lower, upper)
 
     cnts = cv.findContours(mask, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
