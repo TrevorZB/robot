@@ -1,0 +1,57 @@
+Rarity: Rare
+Superior Primordial Staff
+--------
+Staff
+Quality: +5% (augmented)
+Physical Damage: 49-148 (augmented)
+Critical Strike Chance: 6.20%
+Attacks per Second: 1.15
+Weapon Range: 13
+--------
+Requirements:
+Str: 99
+Int: 99
+--------
+Sockets: G-B R-B 
+--------
+Item Level: 63
+--------
++18% Chance to Block Attack Damage while wielding a Staff (implicit)
+--------
+Unidentified
+
+Rarity: Rare
+Ursine Pelt
+--------
+Evasion Rating: 276
+--------
+Requirements:
+Dexterity: 114
+--------
+Sockets: G-G-G 
+--------
+Item Level: 63
+--------
+Unidentified
+
+Rarity: Rare
+Highland Blade
+--------
+Two Handed Sword
+Physical Damage: 39-72
+Critical Strike Chance: 5.00%
+Attacks per Second: 1.35
+Weapon Range: 13
+--------
+Requirements:
+Str: 77
+Dex: 77
+--------
+Sockets: G G 
+--------
+Item Level: 62
+--------
++305 to Accuracy Rating (implicit)
+--------
+Unidentified
+
