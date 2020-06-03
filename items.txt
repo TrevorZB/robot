@@ -20,6 +20,8 @@ Item Level: 63
 --------
 Unidentified
 
+////////////////////////////////////////////////////////////////////////
+
 Rarity: Rare
 Ursine Pelt
 --------
@@ -33,6 +35,8 @@ Sockets: G-G-G
 Item Level: 63
 --------
 Unidentified
+
+////////////////////////////////////////////////////////////////////////
 
 Rarity: Rare
 Highland Blade
@@ -54,4 +58,123 @@ Item Level: 62
 +305 to Accuracy Rating (implicit)
 --------
 Unidentified
+
+////////////////////////////////////////////////////////////////////////
+
+Rarity: Currency
+Chaos Orb
+--------
+Stack Size: 276/10
+--------
+Reforges a rare item with new random modifiers
+--------
+Right click this item then left click a rare item to apply it.
+Shift click to unstack.
+
+////////////////////////////////////////////////////////////////////////
+
+Rarity: Unique
+Pledge of Hands
+Judgement Staff
+--------
+Warstaff
+Quality: +20% (augmented)
+Physical Damage: 76-140 (augmented)
+Critical Strike Chance: 6.30%
+Attacks per Second: 1.30
+Weapon Range: 13
+--------
+Requirements:
+Level: 72
+Str: 113
+Int: 159
+--------
+Sockets: B-B-B-B-B-B 
+--------
+Item Level: 60
+--------
++18% Chance to Block Attack Damage while wielding a Staff (implicit)
+--------
+Socketed Gems are Supported by Level 30 Greater Spell Echo
+151% increased Spell Damage
+100% increased maximum Mana
+--------
+"To shake a hand is to double your power."
+- Jaetai, Queen's Advisor
+
+////////////////////////////////////////////////////////////////////////
+
+Rarity: Rare
+Sol Circle
+Topaz Ring
+--------
+Quality (Life and Mana Modifiers): +1% (augmented)
+--------
+Requirements:
+Level: 59
+--------
+Item Level: 83
+--------
+Your Chilling Towers deal 25% increased Damage (enchant)
+--------
++27% to Lightning Resistance (implicit)
+--------
++34 to Strength
++47 to Dexterity
+Adds 11 to 21 Fire Damage to Attacks
++78 to maximum Life
++24% to Cold Resistance
+
+////////////////////////////////////////////////////////////////////////
+
+Rarity: Rare
+Pain Braid
+Jade Amulet
+--------
+Requirements:
+Level: 65
+--------
+Item Level: 83
+--------
+Allocates Ravenous Horde (enchant)
+--------
++28 to Dexterity (implicit)
+--------
++12 to all Attributes
++32 to Intelligence
++1 to Level of all Intelligence Skill Gems
++55 to maximum Life (crafted)
+--------
+Hunter Item
+
+////////////////////////////////////////////////////////////////////////
+
+Rarity: Rare
+Golem Stride
+Two-Toned Boots
+--------
+Quality: +20% (augmented)
+Evasion Rating: 190 (augmented)
+Energy Shield: 36 (augmented)
+--------
+Requirements:
+Level: 70
+Str: 29
+Dex: 62
+Int: 155
+--------
+Sockets: B-B-B B 
+--------
+Item Level: 71
+--------
++10% to Cold and Lightning Resistances (implicit)
+--------
+31% increased Evasion and Energy Shield
++26 to maximum Life
++1 to Level of all Raise Spectre Gems
+30% increased Movement Speed
+12% increased Stun and Block Recovery
++18% to Fire and Cold Resistances (crafted)
+
+////////////////////////////////////////////////////////////////////////
 

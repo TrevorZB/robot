@@ -18,8 +18,6 @@ def main():
     inventory = [[0]*AI.INV_WIDTH for i in range(AI.INV_HEIGHT)]
     inventory[3][11] = 1
     inventory[4][11] = 1
-    inventory[0][0] = 1
-    inventory[0][1] = 1
     player = AI(inventory)
 
     while True:
@@ -27,8 +25,10 @@ def main():
         img = screenshot.sc(GAME_X, GAME_Y, GAME_WIDTH, GAME_HEIGHT)
         rects = rectangle.create_rects(img)
         if rects:
+            print('item located: ', rects[0])
             player.pick_up(rects[0])
             time.sleep(1)
             player.add_to_inv()
+            print(player)
 
 main()
