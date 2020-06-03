@@ -46,8 +46,13 @@ class AI:
 
     def __str__(self):
         print('inventory:')
-        print(self.inventory)
-        print(self.__dict__)
+        for row in self.inventory:
+            print(row)
+        print('items')
+        for name, items in self.__dict__.items():
+            if items:
+                print(name, items)
+        return ''
 
     def cell_to_rect(self, cell):
         # cell[0] = row ,, cell[1] = col
@@ -80,40 +85,48 @@ class AI:
                 self.weapons.append(center)
                 print("found weapon")
                 self.log_item_in_inv('Weapon')
+                return
             elif word in AI.helm_keywords:
                 self.rare_helms.append(center)
                 print("found helm")
                 self.log_item_in_inv('Helm')
+                return
             elif word in AI.body_keywords:
                 self.rare_bodies.append(center)
                 print("found body")
                 self.log_item_in_inv('Body')
+                return
             elif word in AI.belt_keywords:
                 self.rare_belts.append(center)
                 print("found belt")
                 self.log_item_in_inv('Belt')
+                return
             elif word in AI.gloves_keywords:
                 self.rare_gloves.append(center)
                 print("found gloves")
                 self.log_item_in_inv('Gloves')
+                return
             elif word in AI.boots_keywords:
                 self.rare_boots.append(center)
                 print("found boots")
                 self.log_item_in_inv('Boots')
+                return
             elif word in AI.ring_keywords:
                 self.rare_rings.append(center)
                 print("found ring")
                 self.log_item_in_inv('Ring')
+                return
             elif word in AI.amulet_keywords:
                 self.rare_amulets.append(center)
                 print("found amulet")
                 self.log_item_in_inv('Amulet')
-            else:
-                self.unknowns.append(center)
-                print('found unknown')
-                print('logging unknown data to unknown_data.txt')
-                self.record_unknown_data(data)
-                self.log_item_in_inv('Unknown')
+                return 
+        self.unknowns.append(center)
+        print('found unknown')
+        print('logging unknown data to unknown_data.txt')
+        self.record_unknown_data(data)
+        self.log_item_in_inv('Unknown')
+        return
 
     def log_item_in_inv(self, item):
         print('adding item to virtual inventory')
@@ -218,6 +231,7 @@ class AI:
                         print('starting item logging procedures')
                         self.parse(split_data, center)
                         print('added to inventory')
+                        pyautogui.press('i')
                         return
 
         pyautogui.press('i')
