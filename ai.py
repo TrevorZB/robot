@@ -19,7 +19,7 @@ class AI:
     INV_TOP_LEFT_Y = 590
 
     weapon_keywords = ['Sword', 'Staff', 'Warstaff']
-    helm_keywords = ['Circlet', 'Helm', 'Helmet', 'Bascinet', 'Burgonet', 'Mask']
+    helm_keywords = ['Circlet', 'Helm', 'Helmet', 'Bascinet', 'Burgonet', 'Mask', 'Pelt']
     body_keywords = ['Robe', 'Armour', 'Jacket', 'Plate', 'Leather', 'Doublet', 'Hauberk', 'Garb', 'Brigandine']
     belt_keywords = ['Belt', 'Sash', 'Stygian']
     gloves_keywords = ['Gloves', 'Gauntlets']
@@ -48,9 +48,9 @@ class AI:
         print('inventory:')
         for row in self.inventory:
             print(row)
-        print('items')
+        print('items:')
         for name, items in self.__dict__.items():
-            if items:
+            if items and name != 'inventory':
                 print(name, items)
         return ''
 
@@ -152,8 +152,8 @@ class AI:
 
     def log_unknown_in_inv(self):
         print('finding cells of unknown/unique')
-        for i in range(self.inv_i, self.inv_i + 2):
-            for j in range(self.inv_j, self.inv_j + 4):
+        for i in range(self.inv_i, self.inv_i + 4):
+            for j in range(self.inv_j, self.inv_j + 2):
                 if i ==  AI.INV_HEIGHT:
                     break
                 if j == AI.INV_WIDTH:
@@ -184,10 +184,10 @@ class AI:
 
     def record_unknown_data(self, data):
         f = open('unknown_data.txt', 'a')
-        f.write('##########################')
+        f.write('\n##########################\n')
         for word in data:
             f.write(word)
-        f.write('##########################')
+        f.write('\n##########################\n')
         f.close()
 
     def pick_up(self, rect):
